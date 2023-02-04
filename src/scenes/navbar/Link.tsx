@@ -16,7 +16,9 @@ export default function Link({ page, selectedPage, setSelectedPage }: Props) {
       onClick={() => {
         setSelectedPage(lowerCasePage);
       }}
-      className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""}`}
+      className={`${
+        selectedPage === lowerCasePage ? "text-primary-500" : ""
+      } hover:text-primary-500`}
     >
       {page}
     </AnchorLink>
