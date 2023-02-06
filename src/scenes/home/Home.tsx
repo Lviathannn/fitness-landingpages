@@ -27,7 +27,7 @@ export default function Home({ setSelectedPage }: Props) {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             className="md:-mt-20"
             variants={{
@@ -50,7 +50,7 @@ export default function Home({ setSelectedPage }: Props) {
             className="mt-5"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
@@ -64,7 +64,7 @@ export default function Home({ setSelectedPage }: Props) {
         </div>
         {/* IMAGE */}
         <div className="flex basis-3/5 justify-center md:z-20 md:ml-40 md:justify-items-end">
-          <img src={HomePageGraphic} alt="" />
+          <img src={HomePageGraphic} alt="" className="" />
         </div>
       </motion.div>
       {/* SPONSOR */}
